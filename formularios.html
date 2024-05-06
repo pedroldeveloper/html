@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Luis">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Tags de formulário</h1>    
+    <hr>
+    <h2>Oque é e sua tag  type text</h2>
+    <p>os formulários são dados de entrada por exemplo um login ou cadastrado em geral e uma interação entre o seu programa e o usuario.Sua tag e form dentro dela pode estar as tags input que serve para enviar um dado, com o type text, dentro da tag pode colocar tambem o complemento placehoder que faz uma marca falando oque deve ser feito tambem pode colocar o complemento id para dar um nome ao seu campo.Dentro da tag form pode tambem colocar a tag label para inserir uma legenda e o complemento for para relacionar a legenda com o seu input <br> por exemplo:</p>
+    <form>
+
+        <label for="campo_jogo_favorito">Jogo favorito:</label>
+        <input placeholder="digite seu jogo favorito" id="campo_jogo_favorito" type="text">
+
+        <br>
+
+        <label for="campo_jogo_odiado">Jogo odiado:</label>
+        <input placeholder="digite seu jogo odiado" id="campo_jogo_odiado" type="text">
+
+    </form>
+    <hr>
+    <h2>Tag type password</h2>
+    <p>coloque para ser um campo de senha para ocultar oque esta sendo escrito com o input com seu type password </p>
+    <form>
+
+        <label for="campo_senha">Senha:</label>
+        <input placeholder="digite uma senha" id="campo_senha" type="password">
+
+    </form>
+    <hr>
+    <h2>Tag type email</h2>
+    <p>coloque para servir como um campo para colocar o email que ele detecta um @ e um . com input e type email </p>
+    <form>
+
+        <label for="campo_email">Email:</label>
+        <input placeholder="digite um email" id="campo_email" type="email">
+
+    </form>
+    <hr>
+    <h2>Tag type submit</h2>
+    <p>se usa quando quer enviar depois de preencher os dados com a tag input com o type submit e value para dizer o que e</p>
+    <form>
+        <!-- Type email -->
+        <label for="campo_email">Email:</label>
+        <input placeholder="digite um email" id="campo_email" type="email" >
+
+        <br>
+        <!-- Type password -->
+        <label for="campo_senha">Senha:</label>
+        <input placeholder="digite uma senha" id="campo_senha" type="password" >
+
+        <br>
+        <!-- Type text -->
+        <label for="campo_nome">Nome:</label>
+        <input placeholder="digite seu nome" id="campo_nome" type="text" >
+
+        <br>
+        
+    </form>
+    <hr>
+    <h2>Atributos para o input</h2>
+    <p>pode ser colococados alguns atributos na tag input como o required para os formularios não serem enviados vazios</p>
+    <form>
+
+    <label for="campo_nome">Nome:</label>
+        <input placeholder="digite seu nome" id="campo_nome" type="text" required>
+        
+
+    </form>
+    <hr>
+    <h2>Tag type radio</h2>
+    <p>use o type radio para criar opção de seleção com o complemento name id e value </p>
+    <form>
+        <h3>animal de estimação</h3>
+
+        <label for="cachorro">cachorro</label>
+        <input type="radio" name="animal" id="cachorro" value="cachorro">
+
+        <br>
+
+        <label for="gato">gato</label>
+        <input type="radio" name="animal" id="gato" value="gato">
+
+        <br>
+
+        <label for="passaro">passaro</label>
+        <input type="radio" name="animal" id="passaro" value="passaro">
+
+        <br>
+
+        
+        <hr>
+    </form>
+    <h2>Tag type checkbox</h2>
+    <p>usa o type checkbox para quando quer que tenha a possibilidade de multipla escolha e quase igual ao radio mas o name e diferente a cada input</p>
+    <form>
+        <h3>animal de estimação</h3>
+
+        <label for="cachorro">cachorro</label>
+        <input type="checkbox" name="dog" id="cachorro" value="cachorro">
+
+        <br>
+
+        <label for="gato">gato</label>
+        <input type="checkbox" name="cat" id="gato" value="gato">
+
+        <br>
+
+        <label for="passaro">passaro</label>
+        <input type="checkbox" name="bird" id="passaro" value="passaro">
+
+        <br>
+
+        
+    <hr>
+    <h2>Campo select</h2>
+    <p>serve para dar multipla escolha para um item que pode ser aberto dentro da tag select com o atributo name tem as tags option colocando value para colocar oque vai ser enviado para o formulario e entre abertura e fechamento e escrito oque vai estar na pagina para impossibilitar de escolher alguma opção dentro do option coloque disabled e selected</p>
+        <select name="cor_favorita">
+
+            <h3>Cor favorita</h3>
+
+            <option value="" disabled selected>Selecione uma cor </option>
+
+            <option value="roxo">Roxo </option>
+
+            <option value="preto">Preto</option>
+
+            <option value="azul">Azul</option>
+            
+            <br>
+
+            
+        </select>
+    <hr>
+    <h2>Campo Textarea</h2>
+    <p>E como um input text mas bem maior para o usuario escrever como se fosse um paragrafo com a tag textarea dentro os complementos cols para determinar a largura e rows para determinar a altura e a name para enviar o formulario</p>
+
+        <textarea name="avaliação_do_site" cols="30" rows="10" placeholder="Escreva aqui oque achou do site"></textarea>
+
+        <br>
+
+        
+    <hr>
+    <h2>Tag button</h2>
+    <p>usa a tag button quando for preciso o botão de escolha mas não usar a tag input submit usa a tag button que e bem mais facil por conta de voce somente colocar o texto que ira aparecer para o usuario entre a abertura e o fechamento</p>
+    <button>Botão</button>
+</form>
+</body>
+</html>
